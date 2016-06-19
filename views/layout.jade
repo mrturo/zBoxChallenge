@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='shortcut icon', href='/images/pen.ico', type='image/x-icon')
+  body
+    script(src='https://fb.me/react-15.0.0.js')
+    script(src='https://fb.me/react-dom-15.0.0.js')
+    script(src='https://cdn.firebase.com/js/client/2.4.2/firebase.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js')
+    script.
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyA2--nCRFHvkH9z4xJKram_7D-MvczegEY",
+        authDomain: "zboxtest-86766.firebaseapp.com",
+        databaseURL: "https://zboxtest-86766.firebaseio.com",
+        storageBucket: "zboxtest-86766.appspot.com",
+      };
+      firebase.initializeApp(config);
+    block content
